@@ -12,7 +12,7 @@ namespace A11_SchoolSystem_2026
         protected string Name;
         public string Phone;
 
-        public static void F1() { }
+        //public static void F1() { }
         public Person(int Id, string Name)
         {
             this.Id = Id;
@@ -33,6 +33,22 @@ namespace A11_SchoolSystem_2026
             Name += "AAA";
             Console.WriteLine("Person3");
         }
+
+        public int GetId()
+        {
+            return this.Id;
+        }
+
+        private void G1()
+        {
+            Console.WriteLine("This is G1");
+        }
+
+        protected void G2()
+        {
+                       Console.WriteLine("This is G2");
+        }
+
 
 
         //:base()

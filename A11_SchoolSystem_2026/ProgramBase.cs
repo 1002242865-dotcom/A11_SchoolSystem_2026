@@ -8,7 +8,7 @@ namespace A11_SchoolSystem_2026
 {
     internal class ProgramBase
     {
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             Student st1 = new Student(111, "ABC", 98, "054");
             Console.WriteLine(st1.Phone);

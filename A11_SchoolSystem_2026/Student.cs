@@ -24,10 +24,27 @@ namespace A11_SchoolSystem_2026
         public void PrintDetails()
         {
             //Console.WriteLine("Esm:"+Name+", Year:");
-            Console.WriteLine("this.Phone:"+ this.Phone);
-            Console.WriteLine("base.Phone:" + base.Phone);
-            Console.WriteLine("Phone:" + Phone);
+            Console.WriteLine("this.Phone:"+ this.Phone); //هنا يتم استدعاء المتغير الذي تم تعريفه في فئة الابن
+            Console.WriteLine("base.Phone:" + base.Phone); // هنا يتم استدعاء المتغير الذي تم تعريفه في فئة الاب، ولكن في الحقيقة هذا المتغير لا يحتوي على اي قيمة لانه لم يتم تهيئته في فئة الاب، وبالتالي ستكون قيمته null
+            Console.WriteLine("Phone:" + Phone); // هنا يتم استدعاء المتغير الذي تم تعريفه في فئة الابن، ولكن بدون كتابة الكلمة this، وبالتالي سيتم البحث عن المتغير في فئة الابن اولا، وعندما لا يتم العثور عليه سيتم البحث عنه في فئة الاب، ولكن في الحقيقة هذا المتغير لا يحتوي على اي قيمة لانه لم يتم تهيئته في فئة الاب، وبالتالي ستكون قيمته null
             //this.Id
+
+           
+        }
+
+
+        //داخل فئة الابن نستطيع استدعاء العمليات التي ورثناها من فئة الاب بشرط ان تكون 
+        //public / protected
+        //private ما بزبط
+        public void TestMethod()
+        {
+            base.GetId();
+            this.GetId();
+            GetId();
+
+            base.G2();
+            this.G2();
+            G2();
         }
 
         //دائما يتم استدعاء عملية البناء في فئة الاب قبل فئة الابن
