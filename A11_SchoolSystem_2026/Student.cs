@@ -10,10 +10,10 @@ namespace A11_SchoolSystem_2026
     {
 
         private int Avg;
-        private string Phone;
+        public string Phone;
        
 
-        public Student(int Id,string Name,int Avg,string phone):base(Id)
+        public Student(int Id,string Name,int Avg,string phone):base(Id,Name)
         { 
             this.Avg = Avg;
             this.Phone = phone;
@@ -23,7 +23,11 @@ namespace A11_SchoolSystem_2026
 
         public void PrintDetails()
         {
-            Console.WriteLine("Esm:"+Name);
+            //Console.WriteLine("Esm:"+Name+", Year:");
+            Console.WriteLine("this.Phone:"+ this.Phone);
+            Console.WriteLine("base.Phone:" + base.Phone);
+            Console.WriteLine("Phone:" + Phone);
+            //this.Id
         }
 
         //دائما يتم استدعاء عملية البناء في فئة الاب قبل فئة الابن

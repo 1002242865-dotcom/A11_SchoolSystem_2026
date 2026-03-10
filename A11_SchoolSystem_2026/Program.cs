@@ -4,7 +4,7 @@ namespace A11_SchoolSystem_2026
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             //Student st1 = new Student();
             //Teacher t1 = new Teacher();

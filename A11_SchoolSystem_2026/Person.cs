@@ -10,7 +10,9 @@ namespace A11_SchoolSystem_2026
     {
         private int Id;
         protected string Name;
+        public string Phone;
 
+        public static void F1() { }
         public Person(int Id, string Name)
         {
             this.Id = Id;
