@@ -17,7 +17,7 @@ namespace A11_SchoolSystem_2026
         {
             this.Id = Id;
             this.Name = Name;
-            Console.WriteLine("Person1"); 
+            //Console.WriteLine("Person1"); 
         }
 
         public Person(int Id)
@@ -49,7 +49,21 @@ namespace A11_SchoolSystem_2026
                        Console.WriteLine("This is G2");
         }
 
+        public virtual void G3()
+        {
+            Console.WriteLine("This is G3");
+        }
 
+
+        public override string ToString()
+        {
+            return "Im Person";
+        }
+
+        public string F10()
+        {
+            return "Im Person";
+        }
 
         //:base()
         //او بدون كتابة اي شيئ

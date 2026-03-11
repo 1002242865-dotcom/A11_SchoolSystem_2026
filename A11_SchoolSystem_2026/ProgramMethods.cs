@@ -8,13 +8,14 @@ namespace A11_SchoolSystem_2026
 {
     internal class ProgramMethods
     {
-        static void Main(string[] args)
+        static void Main3(string[] args)
         {
             //Student st1 = new Student(111, "ABC", 98, "054");
             // Console.WriteLine("st1.Phone:" + st1.Phone);
             //Person p1 = st1; //تعدد صوري UpCasting
             //Console.WriteLine("p1.Phone:" + p1.Phone);
 
+           // Person p9 = new Student(1,"yty",99,true);
 
             Person p1 = new Person(100, "ABCD");
             Console.WriteLine(p1.GetId());

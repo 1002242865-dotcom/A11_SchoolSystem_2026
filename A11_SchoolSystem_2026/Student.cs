@@ -17,7 +17,7 @@ namespace A11_SchoolSystem_2026
         { 
             this.Avg = Avg;
             this.Phone = phone;
-            Console.WriteLine("Student");
+            //Console.WriteLine("Student");
 
         }
 
@@ -46,6 +46,13 @@ namespace A11_SchoolSystem_2026
             this.G2();
             G2();
         }
+
+
+        public override void G3()
+        {
+            Console.WriteLine("This is G3 in Student");
+        }
+        
 
         //دائما يتم استدعاء عملية البناء في فئة الاب قبل فئة الابن
         //ويكون ذلك اما بشكل صريح كما هو الحال في المثال السابق
