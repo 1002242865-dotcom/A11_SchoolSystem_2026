@@ -18,5 +18,8 @@ namespace A11_SchoolSystem_2026
             this.IsSport = IsSport;
             Console.WriteLine("Teacher");
         }
+
+
+       
     }
 }

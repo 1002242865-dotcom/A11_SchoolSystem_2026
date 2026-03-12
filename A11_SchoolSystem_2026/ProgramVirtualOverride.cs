@@ -9,7 +9,7 @@ namespace A11_SchoolSystem_2026
 {
     internal class ProgramVirtualOverride
     {
-        static void Main(string[] args)
+        static void Main4(string[] args)
         {
            Person p1=new Person(100,"ABCD");
             p1.G3();
