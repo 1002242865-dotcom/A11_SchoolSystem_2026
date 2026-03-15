@@ -8,7 +8,7 @@ namespace A11_SchoolSystem_2026
 {
     internal class ProgramABCMethods
     {
-        static void Main(string[] args)
+        static void Main6(string[] args)
         {
             A a1 = new A();
             a1.F1(); 
@@ -55,6 +55,9 @@ namespace A11_SchoolSystem_2026
         {
             Console.WriteLine("A--> F2");
         }
+        //اي عمليات نستطيع اعادة تطبيقهن هنا؟
+
+        //F2,F3, ToString,
     }
 
     
@@ -84,6 +87,9 @@ namespace A11_SchoolSystem_2026
         public override void F2()
         {
             Console.WriteLine("B--> F2");
+            //base.F1();
+            //F1();
+            //this.F1();
         }
         public override string ToString()
         {
@@ -94,12 +100,15 @@ namespace A11_SchoolSystem_2026
     {       
         public override void F3()
         {
+            base.F3(); //استدعاء النسخة الاصلية للعملية
             Console.WriteLine("C--> F3");
         }
         public void G1()
         {
             Console.WriteLine("C--> G1");
         }
+
+       
     }
 
     
