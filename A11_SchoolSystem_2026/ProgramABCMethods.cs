@@ -49,20 +49,11 @@ namespace A11_SchoolSystem_2026
         }
     }
 
-    class D : C
-    {
-        public void H1()
-        {
-            Console.WriteLine("A--> F2");
-        }
-        //اي عمليات نستطيع اعادة تطبيقهن هنا؟
-
-        //F2,F3, ToString,
-    }
+    
 
     
 
-    class A
+    class A 
     {
         public void F1()
         {
@@ -74,8 +65,10 @@ namespace A11_SchoolSystem_2026
         }
         public virtual void F3()
         {
+
             Console.WriteLine("A--> F3");
         }
+
         public override string ToString()
         {
             return "A--> ToString";
@@ -100,18 +93,37 @@ namespace A11_SchoolSystem_2026
     {       
         public override void F3()
         {
-            base.F3(); //استدعاء النسخة الاصلية للعملية
+            //base.F3(); //استدعاء النسخة الاصلية للعملية
             Console.WriteLine("C--> F3");
         }
         public void G1()
         {
+            F3(); //base.F3() Or this.F3()
             Console.WriteLine("C--> G1");
         }
 
        
     }
 
-    
+    class D : C
+    {
+        public void H1()
+        {
+            base.F3();
+            Console.WriteLine("A--> F2");
+        }
+
+        public override void F2()
+        {
+            Console.WriteLine("D --> F2");
+        }
+
+
+        //اي عمليات نستطيع اعادة تطبيقهن هنا؟
+        //F2,F3, ToString,
+    }
+
+
 
 
 }

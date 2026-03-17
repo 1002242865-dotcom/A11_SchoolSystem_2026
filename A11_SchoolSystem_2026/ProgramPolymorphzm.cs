@@ -8,7 +8,7 @@ namespace A11_SchoolSystem_2026
 {
     internal class ProgramPolymorphzm
     {
-        static void Main(string[] args)
+        static void Main7(string[] args)
         {
             //التحويل للاعلى המרה למעלה Upcasting (اب كاستينج)
             double x = 3;
