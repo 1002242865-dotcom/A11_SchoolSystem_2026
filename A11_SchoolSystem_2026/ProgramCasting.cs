@@ -8,7 +8,7 @@ namespace A11_SchoolSystem_2026
 {
     internal class ProgramCasting
     {
-        static void Main(string[] args)
+        static void Main8(string[] args)
         {
             //upcasting ولا يتطلب كتابة تحويل خاص- بشكل صريح وهو دائما صحيح
             //D d1= new D();
@@ -32,7 +32,12 @@ namespace A11_SchoolSystem_2026
 
             //c1.F2();
 
-            
+
+            D d1 = new D();
+            C c1 = d1;
+            A a1 = c1;
+
+
 
             A[] arr = new A[6];
             arr[0] = new A();
@@ -42,14 +47,10 @@ namespace A11_SchoolSystem_2026
             arr[4] = new B();
             arr[5] = arr[2];
 
-
-            
-
-            
             
             for(int i=0;i<arr.Length;i++)
             {
-                arr[i].F2();
+                //arr[i].F2();
                 arr[i].F3();
                 
                     
