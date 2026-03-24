@@ -8,7 +8,7 @@ namespace A11_SchoolSystem_2026
 {
     internal class ProgramDownCasting
     {
-        static void Main(string[] args)
+        static void Main8(string[] args)
         {
             //down casting التحويل للاسفل המרה למטה
             //كما تعلمنا ساباق فان نوع المؤشر يحدد ماهي العمليات التي نستطيع استدعائها (ترجمة وتحويل)
@@ -24,6 +24,9 @@ namespace A11_SchoolSystem_2026
 
             A a1 = new A(); // v v 
             B b1 = (B)a1; // v x
+            Object o1=(Object)a1; // v v تحويل زائد
+
+            
 
             A a2 = new B(); // v v
             B b2 = (B)a2; // v v
@@ -33,9 +36,32 @@ namespace A11_SchoolSystem_2026
             C c3 = (C)a3; // v  v
 
             A a4 = new D(); // v v 
-            C c4 = (C)a4;
+            C c4 = (C)a4; // v v
+            D d4 = (D)a4;
+            D d44 = (D)c4; //
+
+            B b4 = (B)a4; //v x 
+
             
+
+
+
             
+            B b10 = new B();
+            A a10 = b10; //v v
+            //C c10 = (C)b10; //x 
+            C c100 = (C)a10; //v x
+
+
+            B b11 = (B)new A(); 
+
+
+
+
+
+
+
+            if (a4 == d44) { } //هل المؤشران يشيران الى نفس الكائن في الذاكرة
             C c44 = (D)a4;
 
 
