@@ -8,7 +8,7 @@ namespace A11_SchoolSystem_2026
 {
     internal class ProgramIs
     {
-        static void Main(string[] args)
+        static void MainIs(string[] args)
         {
             A a = new D();//upcasting اب كاستينج
             RunH1(a);
@@ -42,11 +42,15 @@ namespace A11_SchoolSystem_2026
 
             if(a1 is D)
             {
-                a1.G1(); //خطأ شائع
+                //  a1.G1(); //خطأ شائع
                 D d1 = (D)a1;
                 d1.H1();
-                
+
                 //كتابات مختصرة
+                //Dot notation
+           /*1*/ //(D)a1.H1(); //x
+           /*2*/ ((D)a1).H1(); //v v
+
             }
             
         }
